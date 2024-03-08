@@ -1,0 +1,74 @@
+package sesi_3;
+
+import java.util.ArrayList;
+
+public class Mahasiswa {
+    String nama, nim;
+    int nilai;
+
+    Mahasiswa(){
+
+    }
+
+    void setNama(String namaMahasiswa){
+        nama = namaMahasiswa;
+    }
+
+    void setNim(String nimMahasiswa){
+        nim = nimMahasiswa;
+    }
+
+    void setNilai(int nilai){
+        this.nilai = nilai;
+    }
+
+    String grade(int nilai){
+        if(nilai >= 80){
+            return "A";
+        }else if(nilai >= 70){
+            return "B";
+        }else if(nilai >= 60){
+            return "C";
+        }else if(nilai >= 50){
+            return "D";
+        }else if(nilai < 50){
+            return "E";
+        }else{
+            return "Input nilai anda salah";
+        }
+    }
+    String getNama() {
+        return nama;
+    }
+
+    String getNim() {
+        return nim;
+    }
+
+    int getNilai(){
+        return nilai;
+    }
+
+    ArrayList<String> getNamaLulus(Mahasiswa[] mahasiswa) {
+        ArrayList<String> namaLulus = new ArrayList<>();
+        for (Mahasiswa m : mahasiswa) {
+            if (m.lulus()) {
+                namaLulus.add(m.getNama());
+            }
+        }
+        return namaLulus;
+    }
+
+    boolean lulus() {
+        return getNilai() >= 60;
+    }
+
+    void infoMahasiswa(){
+        System.out.println("Nim : "  + getNim());
+        System.out.println("Nama : " + getNama());
+        System.out.println("Nilai : " + getNilai());
+        System.out.println("Grade: " + grade(getNilai()));
+        System.out.println("=============================");
+    }
+
+}

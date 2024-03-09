@@ -1,7 +1,5 @@
 package sesi_3;
 
-import java.util.ArrayList;
-
 public class Mahasiswa {
     String nama, nim;
     int nilai;
@@ -22,6 +20,26 @@ public class Mahasiswa {
         this.nilai = nilai;
     }
 
+    String getNama() {
+        return nama;
+    }
+
+    String getNim() {
+        return nim;
+    }
+
+    int getNilai(){
+        return nilai;
+    }
+
+    boolean lulus() {
+        return getNilai() >= 60;
+    }
+
+    boolean tidakLulus() {
+        return getNilai() < 60;
+    }
+
     String grade(int nilai){
         if(nilai >= 80){
             return "A";
@@ -36,31 +54,6 @@ public class Mahasiswa {
         }else{
             return "Input nilai anda salah";
         }
-    }
-    String getNama() {
-        return nama;
-    }
-
-    String getNim() {
-        return nim;
-    }
-
-    int getNilai(){
-        return nilai;
-    }
-
-    ArrayList<String> getNamaLulus(Mahasiswa[] mahasiswa) {
-        ArrayList<String> namaLulus = new ArrayList<>();
-        for (Mahasiswa m : mahasiswa) {
-            if (m.lulus()) {
-                namaLulus.add(m.getNama());
-            }
-        }
-        return namaLulus;
-    }
-
-    boolean lulus() {
-        return getNilai() >= 60;
     }
 
     void infoMahasiswa(){

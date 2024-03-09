@@ -55,7 +55,7 @@ public class Mahasiswa {
             return "Input nilai anda salah";
         }
     }
-
+    
     void infoMahasiswa(){
         System.out.println("Nim : "  + getNim());
         System.out.println("Nama : " + getNama());

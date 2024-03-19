@@ -1,6 +1,6 @@
 package Encapsution;
 
-class Person {
+public class Person {
     String name, address;
 
     Person(String name, String address) {
@@ -20,5 +20,6 @@ class Person {
     public String toString() {
         return "Nama : " + name + ", Alamat: " + address ;
     }
-
+    
 }
+

@@ -1,7 +1,7 @@
 package SesiKuliah;
 
 public class MobilBensin extends Mobil{
-     String bahan_bakar;
+    String bahan_bakar;
     
     MobilBensin(String merk, int harga, int kecepatan, String bahan_bakar){
         // dapat memanggil konstruktor 

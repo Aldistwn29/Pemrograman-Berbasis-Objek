@@ -12,8 +12,8 @@ class Kangguru extends Overidding {
         System.out.println("Kangguru merupakan hewan mamalia");
     }
 
-    void melahirkan() {
-    System.out.println("Kangguru hewan yang melahirkan");
+        void melahirkan() {
+        System.out.println("Kangguru hewan yang melahirkan");
     }
 }
 

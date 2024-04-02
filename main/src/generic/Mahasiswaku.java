@@ -1,6 +1,5 @@
 package generic;
 
-import java.util.ArrayList;
 
 public class Mahasiswaku {
     public static void main(String[] args) {
@@ -9,11 +8,8 @@ public class Mahasiswaku {
         m.setName("Ferdi");
         m.setStudentClass(21);
 
-        ArrayList<Object> mahasiswaList = new ArrayList<>();
-        mahasiswaList.add(m.getNim());
-        mahasiswaList.add(m.getName());
-        mahasiswaList.add(m.getStudentClass());
-
-        System.out.println(mahasiswaList);
+        System.out.println(m.getNim());
+        System.out.println(m.getName());
+        System.out.println(m.getStudentClass());
     }
 }

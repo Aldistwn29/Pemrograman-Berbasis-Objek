@@ -1,0 +1,11 @@
+Kode ini mendemonstrasikan penggunaan kata kunci throw untuk secara eksplisit melemparkan sebuah pengecualian. Berikut adalah analisis rinci dari kode yang ada:
+
+Method demo:
+
+Sebuah objek NullPointerException dibuat dengan pesan "Coba Throw".
+Pengecualian ini kemudian dilempar menggunakan throw.
+Baris komentar menunjukkan bahwa baris setelah throw tidak akan dieksekusi.
+Method main:
+
+Metode demo dipanggil di dalam blok try.
+Jika demo melempar pengecualian, blok catch menangkapnya dan mencetak pesan kesalahan.

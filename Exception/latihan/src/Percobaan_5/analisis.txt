@@ -1,0 +1,8 @@
+blok try : 
+Blok try digunakan untuk membungkus kode yang mungkin menyebabkan kesalahan. Dalam hal ini, perintah bil / 0 akan menyebabkan kesalahan karena pembagian dengan nol tidak diperbolehkan dalam aritmatika integer. Ini secara otomatis akan melempar ArithmeticException.
+
+blok catch (ArithmeticException):
+Blok catch ini khusus menangani ArithmeticException. Ketika bil / 0 dieksekusi, sebuah ArithmeticException dilempar dan blok catch ini akan menangkapnya. Berikut adalah rincian dari apa yang terjadi dalam blok ini:
+
+blok catch(Exaption e) : 
+Blok catch ini menangani semua jenis pengecualian lain yang merupakan subclass dari Exception, yang tidak ditangani oleh blok catch pertama. Ini adalah blok penanganan kesalahan generik yang mencetak pesan bahwa sebuah kesalahan telah terjadi, tetapi hanya menangani pengecualian yang bukan ArithmeticException.

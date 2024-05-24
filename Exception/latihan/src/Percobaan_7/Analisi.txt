@@ -1,0 +1,14 @@
+Blok try:
+
+Bagian try digunakan untuk membungkus kode yang mungkin dapat menyebabkan pengecualian (exception). Dalam hal ini, kode yang berada di dalam blok try secara eksplisit melempar pengecualian baru menggunakan pernyataan throw.
+throw new Exception("Here's my Exception"): Baris ini secara eksplisit melemparkan objek Exception dengan pesan "Here's my Exception". Ini berarti bahwa setiap kode setelah baris ini dalam blok try tidak akan dieksekusi karena pengecualian telah dilempar.
+Blok catch:
+
+Bagian catch digunakan untuk menangkap dan menangani pengecualian yang dilempar dalam blok try. Dalam hal ini, pengecualian yang dilempar dalam blok try akan ditangkap oleh blok catch yang menangani objek Exception.
+catch (Exception e): Parameter e adalah referensi ke objek Exception yang dilempar oleh blok try. Ini memungkinkan akses ke metode dan informasi terkait pengecualian.
+Handling Exception:
+
+System.out.println("Caught Exception");: Baris ini mencetak pesan sederhana ke konsol yang menunjukkan bahwa pengecualian telah ditangkap.
+System.out.println("e.getMessage():" + e.getMessage());: Metode getMessage() mengembalikan pesan yang ditentukan saat pengecualian dilempar. Dalam hal ini, pesan yang dikembalikan adalah "Here's my Exception".
+System.out.println("e.toString():" + e.toString());: Metode toString() mengembalikan string yang mencakup nama kelas pengecualian dan pesan. Hasil dari baris ini akan berupa sesuatu seperti java.lang.Exception: Here's my Exception.
+System.out.println("e.printStackTrace():"); dan e.printStackTrace();: Metode printStackTrace() mencetak traceback dari pengecualian ke standar kesalahan (error output). Traceback menunjukkan urutan metode yang dipanggil sebelum pengecualian dilempar, sehingga memudahkan debugging.

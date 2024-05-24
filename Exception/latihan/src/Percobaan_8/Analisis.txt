@@ -1,0 +1,20 @@
+Method methodA:
+
+Method ini hanya mencetak "Method A" ke konsol.
+Method methodB:
+
+Method ini mencoba membagi angka 20 dengan 0, yang menyebabkan ArithmeticException (pembagian dengan nol).
+Karena ArithmeticException adalah subclass dari Exception dan bukan IOException, method ini tetap memerlukan penanganan khusus saat dipanggil.
+Blok try:
+
+try digunakan untuk menjalankan kode yang mungkin dapat menyebabkan pengecualian.
+Dalam hal ini, method methodB() dipanggil dalam blok try.
+Blok catch:
+
+catch (Exception e) menangkap pengecualian yang dilempar oleh blok try.
+Saat methodB() menyebabkan ArithmeticException karena pembagian dengan nol, pengecualian ini ditangkap oleh blok catch.
+System.out.println("Error di Method B"); mencetak pesan bahwa terjadi kesalahan di method methodB.
+Blok finally:
+
+finally adalah blok yang selalu dijalankan, terlepas dari apakah pengecualian terjadi atau tidak.
+System.out.println("ini selalu di cetak"); mencetak pesan ini setiap kali blok try atau catch selesai dijalankan.
